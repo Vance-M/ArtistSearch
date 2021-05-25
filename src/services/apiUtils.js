@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export const getArtists = async (artist) => {
   const response = await fetch(
     `${process.env.BASE_URL}/artist?query=${artist}&fmt=json&limit=25`
@@ -8,7 +9,10 @@ export const getArtists = async (artist) => {
   return artists.map((artist) => ({
     artistId: artist.id,
     artistName: artist.name,
-    hometown: artist.begin - area.name || 'N/A',
+    // prettier-ignore
+    // eslint-disable-next-line space-infix-ops
+    hometown: artist.begin-area.name || 'N/A',
+
     country: artist.country || 'N/A',
   }));
 };
