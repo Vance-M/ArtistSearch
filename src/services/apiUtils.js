@@ -8,12 +8,11 @@ export const getArtists = async (artist) => {
 
   return artists.map((artist) => ({
     artistId: artist.id,
-    artistName: artist.name,
+    artistName: artist.name ,
     // prettier-ignore
     // eslint-disable-next-line space-infix-ops
-    hometown: artist.begin-area.name || 'N/A',
-
-    country: artist.country || 'N/A',
+    // hometown: artist.area.name,
+    // country: artist.country,
   }));
 };
 export const getArtistById = async (id) => {

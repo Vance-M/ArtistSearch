@@ -7,5 +7,6 @@ describe('AlbumsContainer', () => {
     render(<AlbumsContainer />);
 
     screen.getByText('Loading...');
+    // const ulEl = screen.getByLabelText('albums');
   });
 });
