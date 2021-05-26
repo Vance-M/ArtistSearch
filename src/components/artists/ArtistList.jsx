@@ -6,7 +6,7 @@ function ArtistList({ artists }) {
   return (
     <>
       <ul aria-label="artist-list">
-        {artists.map((
+        {artists && artists.map((
           { artistId,
             artistName }) => (
           <li key={artistId}>

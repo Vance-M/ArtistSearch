@@ -1,20 +1,21 @@
+/* eslint-disable max-len */
 /* eslint-disable no-undef */
-export const getArtists = async (artist) => {
+export const getArtists = async (artist, offset) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/artist?query=${artist}&fmt=json&limit=25`
+    `${process.env.BASE_URL}/artist?query=${artist}&fmt=json&limit=25&offset=${offset}`
   );
 
-  const { artists } = await response.json();
+  const { artists, count } = await response.json();
 
-  return artists.map((artist) => ({
-    artistId: artist.id,
-    artistName: artist.name,
-    // prettier-ignore
-    // eslint-disable-next-line space-infix-ops
-    // hometown: artist.area.name,
-    // country: artist.country,
-  }));
+  return { 
+    artists: artists.map((artist) => ({
+      artistId: artist.id,
+      artistName: artist.name,
+    })),
+    count
+  };
 };
+
 export const getArtistById = async (id) => {
   const response = await fetch(
     `${process.env.BASE_URL}/release?artist=${id}&fmt=json`
