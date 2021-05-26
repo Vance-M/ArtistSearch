@@ -15,7 +15,7 @@ function Tracks({ title, recordingId, length }) {
     <div>
       <Link to={`/track/${recordingId}`}>
         <h1>{title}</h1>
-        <p>Playtime : {convertMilli({ length })}</p>
+        {!length ? 'N/A' : <p>Playtime : {convertMilli({ length })}</p>}
       </Link>
     </div>
   );
@@ -24,7 +24,7 @@ function Tracks({ title, recordingId, length }) {
 Tracks.propTypes = {
   recordingId: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  length: PropTypes.string.isRequired,
+  length: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
 export default Tracks;

@@ -27,8 +27,11 @@ TracksList.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       recordingId: PropTypes.string.isRequired,
-      length: PropTypes.string.isRequired,
-    })
+        length: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ])
+    }).isRequired,
   ),
 };
 

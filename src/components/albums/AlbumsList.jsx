@@ -5,7 +5,7 @@ import Album from './Album';
 function AlbumsList({ releases }) {
   return (
     <ul aria-label="release-list">
-      {releases.map(({
+      {releases && releases.map(({
         title,
         releaseId,
         releaseDate,

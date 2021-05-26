@@ -16,19 +16,24 @@ export const getArtists = async (artist, offset) => {
   };
 };
 
-export const getArtistById = async (id) => {
+export const getArtistById = async (id, offset) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/release?artist=${id}&fmt=json`
+    `${process.env.BASE_URL}/release?artist=${id}&fmt=json&limit=10&offset=${offset}`
   );
 
   const albums = await response.json();
 
-  return albums.releases.map((release) => ({
+  return {  
+  albums: albums.releases.map((release) => ({
     releaseId: release.id,
     title: release.title,
     releaseDate: release.date,
-  }));
+  })),
+  count: albums["releases-count"]
+}
 };
+
+
 export const getAlbumById = async (id) => {
   const response = await fetch(
     `${process.env.BASE_URL}/recording?release=${id}&fmt=json`
