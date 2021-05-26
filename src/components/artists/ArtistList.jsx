@@ -1,38 +1,39 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Artist from './Artist'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Artist from './Artist';
 
-function ArtistList({artists}) {
-   return (
-      <>
-         <ul aria-label='artist-list'>
-            {artists.map((
-               {artistId,
-               artistName}) => (
-               <li key={artistId}>
-                  <Artist
-                     artistName={artistName}
-                     // hometown={hometown}
-                     // country={country}
-                     />
-               </li>
-            ))}
+function ArtistList({ artists }) {
+  return (
+    <>
+      <ul aria-label="artist-list">
+        {artists.map((
+          { artistId,
+            artistName }) => (
+          <li key={artistId}>
+            <Artist
+              artistName={artistName}
+              artistId={artistId}
+              // hometown={hometown}
+              // country={country}
+            />
+          </li>
+        ))}
 
-         </ul>
-         </>
-   )
+      </ul>
+    </>
+  );
 }
 
 ArtistList.propTypes = {
-   artists: PropTypes.arrayOf(
-      PropTypes.shape({
+  artists: PropTypes.arrayOf(
+    PropTypes.shape({
       artistId: PropTypes.string.isRequired,
       artistName: PropTypes.string.isRequired,
       // hometown: PropTypes.string.isRequired,
       // country: PropTypes.string.isRequired,
-   }).isRequired
-)
-}
+    }).isRequired
+  )
+};
 
-export default ArtistList
+export default ArtistList;
 

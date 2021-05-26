@@ -8,27 +8,27 @@ function ArtistsContainer() {
   const [artists, setArtists] = useState([]);
   const [query, setQuery] = useState('');
   // const [page, setPage] = useState(1)
-console.log(artists)
+  console.log(artists);
   
    
-   const onSubmitHandler = async (e) => {
-      e.preventDefault();
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
     
   };
 
    
-   useEffect(() => {
-      if (!query)
-      {
-         setQuery('');
-         setArtists([]);
-      } else
-      {  
-         getArtists(query)
-            .then(setArtists)
-            .finally(() => setLoading(false));
-      } 
-      }, [query]);
+  useEffect(() => {
+    if(!query)
+    {
+      setQuery('');
+      setArtists([]);
+    } else
+    {  
+      getArtists(query)
+        .then(setArtists)
+        .finally(() => setLoading(false));
+    } 
+  }, [query]);
   
   const onQueryChangeHandler = ({ target }) => {
     setQuery(target.value);

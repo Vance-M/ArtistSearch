@@ -7,6 +7,7 @@ function Artist({ artistId, artistName }) {
     <Link to={`/artist/${artistId}`}>
       <figure>
         <h2>{artistName}</h2>
+        <p>{artistId}</p>
       </figure>
     </Link>
   );

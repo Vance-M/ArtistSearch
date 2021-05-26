@@ -23,7 +23,7 @@ export const getArtistById = async (id) => {
   const albums = await response.json();
 
   return albums.releases.map((release) => ({
-    releaseID: release.id,
+    releaseId: release.id,
     title: release.title,
     releaseDate: release.date,
   }));
