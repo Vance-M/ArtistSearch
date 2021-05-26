@@ -8,7 +8,7 @@ export const getArtists = async (artist) => {
 
   return artists.map((artist) => ({
     artistId: artist.id,
-    artistName: artist.name ,
+    artistName: artist.name,
     // prettier-ignore
     // eslint-disable-next-line space-infix-ops
     // hometown: artist.area.name,
