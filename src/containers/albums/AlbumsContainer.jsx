@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AlbumList from '../../components/albums/AlbumsList';
 import { useParams } from 'react-router-dom';
 import { getArtistById } from '../../services/apiUtils';
+import Spinner from '../../components/Spinner';
 
 function AlbumsContainer() {
   const [artist, setArtist] = useState({});
@@ -27,7 +28,7 @@ function AlbumsContainer() {
   };
 
   return loading ? (
-    <h1>Loading...</h1>
+    <Spinner />
   ) : (
     <>
       <button onClick={handlePrevPage} disabled={page < 2}>
@@ -36,10 +37,7 @@ function AlbumsContainer() {
       <button onClick={handleNextPage} disabled={page > artist.count / 10}>
         Next
       </button>
-        <AlbumList
-          releases={artist.albums}
-          artistName={artistName}
-        />
+      <AlbumList releases={artist.albums} artistName={artistName} />
     </>
   );
 }

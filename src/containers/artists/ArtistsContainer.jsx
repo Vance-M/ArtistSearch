@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import ArtistList from '../../components/artists/ArtistList';
 import ArtistControls from '../../components/controls/ArtistControls';
+import Spinner from '../../components/Spinner';
 import { getArtists } from '../../services/apiUtils';
 
 function ArtistsContainer() {
@@ -20,7 +21,7 @@ function ArtistsContainer() {
   const offset = (page - 1) * 25;
 
   useEffect(() => {
-    if(!query) {
+    if (!query) {
       setQuery('');
       setArtists([]);
     } else {
@@ -44,7 +45,7 @@ function ArtistsContainer() {
   };
 
   return loading ? (
-    <h1>Loading...</h1>
+    <Spinner />
   ) : (
     <>
       <ArtistControls
@@ -52,8 +53,12 @@ function ArtistsContainer() {
         query={query}
         onQueryChange={onQueryChangeHandler}
       />
-      <button onClick={handlePrevPage} disabled={page < 2}>Prev</button>
-      <button onClick={handleNextPage} disabled={page > ((artists.count) / 25)}>Next</button>
+      <button onClick={handlePrevPage} disabled={page < 2}>
+        Prev
+      </button>
+      <button onClick={handleNextPage} disabled={page > artists.count / 25}>
+        Next
+      </button>
       <ArtistList artists={artists.artists} />
     </>
   );

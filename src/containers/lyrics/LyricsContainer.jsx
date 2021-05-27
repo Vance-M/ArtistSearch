@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Lyrics from '../../components/lyrics/Lyrics';
+import Spinner from '../../components/Spinner';
 import { getLyrics } from '../../services/apiUtils';
 
 function LyricsContainer() {
@@ -16,13 +17,9 @@ function LyricsContainer() {
       .finally(() => setLoading(false));
   }, []);
 
-  const myFunction = () => {
-    setTimeout(function () {
-      alert('sorry no lyrics');
-    }, 3000);
-  };
+  console.log(lyrics);
 
-  return loading ? <h1>Loading...</h1> : <Lyrics lyrics={lyrics} />;
+  return loading ? <Spinner /> : <Lyrics lyrics={lyrics} />;
 }
 
 export default LyricsContainer;

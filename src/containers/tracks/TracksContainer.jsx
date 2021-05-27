@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { useParams } from 'react-router-dom';
+import Spinner from '../../components/Spinner';
 import TracksList from '../../components/tracks/TracksList';
 import { getAlbumById } from '../../services/apiUtils';
 
@@ -15,16 +16,13 @@ function TracksContainer() {
       .finally(() => setLoading(false));
   }, []);
 
-  return loading ? (<h1>Loading...</h1>) :
-    (
-      <>
-        <TracksList
-          tracks={tracks}
-          artistName={artistName}
-        />
-    
-      </>
-    );
+  return loading ? (
+    <Spinner />
+  ) : (
+    <>
+      <TracksList tracks={tracks} artistName={artistName} />
+    </>
+  );
 }
 
 export default TracksContainer;

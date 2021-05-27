@@ -7,12 +7,12 @@ export const getArtists = async (artist, offset) => {
 
   const { artists, count } = await response.json();
 
-  return { 
+  return {
     artists: artists.map((artist) => ({
       artistId: artist.id,
       artistName: artist.name,
     })),
-    count
+    count,
   };
 };
 
@@ -23,16 +23,15 @@ export const getArtistById = async (id, offset) => {
 
   const albums = await response.json();
 
-  return {  
-  albums: albums.releases.map((release) => ({
-    releaseId: release.id,
-    title: release.title,
-    releaseDate: release.date,
-  })),
-  count: albums["releases-count"]
-}
+  return {
+    albums: albums.releases.map((release) => ({
+      releaseId: release.id,
+      title: release.title,
+      releaseDate: release.date,
+    })),
+    count: albums['releases-count'],
+  };
 };
-
 
 export const getAlbumById = async (id) => {
   const response = await fetch(
@@ -81,12 +80,14 @@ export const getLyrics = async (artist, track) => {
     const response = await fetchWithTimeout(
       `https://api.lyrics.ovh/v1/${artist}/${track}`,
       {
-        timeout: 4000,
+        timeout: 15000,
       }
     );
 
     const lyrics = await response.json();
 
     return lyrics;
-  } catch(error) { return {lyrics: 'Sorry, no lyrics found!'};}
+  } catch (error) {
+    return { lyrics: 'Sorry, no lyrics found!' };
+  }
 };
