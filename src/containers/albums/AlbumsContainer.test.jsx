@@ -11,7 +11,7 @@ import albumsContainer from '../../apiData/albumsContainer.json';
 const server = setupServer(
   rest.get(
     // eslint-disable-next-line max-len
-    'http://musicbrainz.org/ws/2/release',
+    'https://musicbrainz.org/ws/2/release',
     (req, res, ctx) => {
       return res(ctx.json(albumsContainer));
     }
