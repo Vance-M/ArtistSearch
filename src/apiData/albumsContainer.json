@@ -1,0 +1,408 @@
+{
+  "release-offset": 0,
+  "release-count": 318,
+  "releases": [
+    {
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "packaging": null,
+      "packaging-id": null,
+      "asin": "B00006AW48",
+      "barcode": "5099767298220",
+      "title": "Work It Out",
+      "cover-art-archive": {
+        "back": false,
+        "count": 0,
+        "front": false,
+        "artwork": false,
+        "darkened": false
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "disambiguation": "",
+      "country": "GB",
+      "id": "07823f7b-199e-4194-8685-8f1c7a4dc48f",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "sort-name": "United Kingdom",
+            "iso-3166-1-codes": ["GB"],
+            "type-id": null,
+            "name": "United Kingdom",
+            "type": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed"
+          },
+          "date": "2002-07-15"
+        }
+      ],
+      "date": "2002-07-15"
+    },
+    {
+      "packaging": "Slim Jewel Case",
+      "status": "Official",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "country": "AU",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "Australia",
+            "iso-3166-1-codes": ["AU"],
+            "disambiguation": "",
+            "type": null,
+            "type-id": null,
+            "name": "Australia",
+            "id": "106e0bec-b638-3b37-b731-f53d507dc00e"
+          },
+          "date": "2002"
+        },
+        {
+          "area": {
+            "type": null,
+            "name": "New Zealand",
+            "type-id": null,
+            "id": "8524c7d9-f472-3890-a458-f28d5081d9c4",
+            "iso-3166-1-codes": ["NZ"],
+            "sort-name": "New Zealand",
+            "disambiguation": ""
+          },
+          "date": "2002"
+        }
+      ],
+      "id": "0f0cdddb-f1c3-424b-8b3d-cba17b939a6d",
+      "date": "2002",
+      "asin": null,
+      "packaging-id": "36327bc2-f691-3d66-80e5-bd03cec6060a",
+      "title": "Work It Out",
+      "barcode": "9399700101812",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "cover-art-archive": {
+        "darkened": false,
+        "artwork": false,
+        "front": false,
+        "count": 0,
+        "back": false
+      },
+      "disambiguation": ""
+    },
+    {
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "packaging": "Slim Jewel Case",
+      "asin": null,
+      "packaging-id": "36327bc2-f691-3d66-80e5-bd03cec6060a",
+      "barcode": "5099767268728",
+      "title": "Work It Out",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "count": 0,
+        "front": false,
+        "artwork": false
+      },
+      "disambiguation": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "country": "XE",
+      "id": "157ac01a-9ba2-4fec-9893-c45c36ac140a",
+      "release-events": [
+        {
+          "area": {
+            "disambiguation": "",
+            "sort-name": "Europe",
+            "iso-3166-1-codes": ["XE"],
+            "name": "Europe",
+            "type-id": null,
+            "type": null,
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a"
+          },
+          "date": "2002"
+        }
+      ],
+      "date": "2002"
+    },
+    {
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "packaging": "Jewel Case",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": "B00006IWGY",
+      "barcode": "5099750939529",
+      "title": "Dangerously in Love",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "cover-art-archive": {
+        "front": true,
+        "artwork": true,
+        "back": true,
+        "count": 2,
+        "darkened": false
+      },
+      "disambiguation": "",
+      "country": "GB",
+      "id": "3e581f3e-95e4-4099-bc06-1171879b4e5f",
+      "release-events": [
+        {
+          "area": {
+            "type-id": null,
+            "name": "United Kingdom",
+            "type": null,
+            "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+            "disambiguation": "",
+            "sort-name": "United Kingdom",
+            "iso-3166-1-codes": ["GB"]
+          },
+          "date": "2003-06-23"
+        }
+      ],
+      "date": "2003-06-23"
+    },
+    {
+      "date": "2003-06-02",
+      "id": "40b8a78b-b248-431d-8938-ac997f98bfb3",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "United States",
+            "iso-3166-1-codes": ["US"],
+            "disambiguation": "",
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type": null,
+            "name": "United States",
+            "type-id": null
+          },
+          "date": "2003-06-02"
+        }
+      ],
+      "country": "US",
+      "cover-art-archive": {
+        "darkened": false,
+        "back": false,
+        "count": 1,
+        "front": true,
+        "artwork": true
+      },
+      "disambiguation": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "barcode": null,
+      "title": "I Can't Take No More",
+      "asin": null,
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "packaging": "None",
+      "quality": "normal",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "status": "Official"
+    },
+    {
+      "disambiguation": "",
+      "cover-art-archive": {
+        "darkened": false,
+        "count": 3,
+        "back": true,
+        "artwork": true,
+        "front": true
+      },
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "title": "Work It Out",
+      "barcode": "",
+      "packaging-id": "ec27701a-4a22-37f4-bfac-6616e0f9750a",
+      "asin": null,
+      "date": "2002",
+      "release-events": [
+        {
+          "area": {
+            "type": null,
+            "name": "Europe",
+            "type-id": null,
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "sort-name": "Europe",
+            "iso-3166-1-codes": ["XE"],
+            "disambiguation": ""
+          },
+          "date": "2002"
+        }
+      ],
+      "id": "76c48ed1-efca-446f-8573-2033fc094319",
+      "country": "XE",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "status": "Promotion",
+      "packaging": "Jewel Case"
+    },
+    {
+      "date": "2003-03-10",
+      "country": "XW",
+      "release-events": [
+        {
+          "date": "2003-03-10",
+          "area": {
+            "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+            "type": null,
+            "name": "[Worldwide]",
+            "type-id": null,
+            "sort-name": "[Worldwide]",
+            "iso-3166-1-codes": ["XW"],
+            "disambiguation": ""
+          }
+        }
+      ],
+      "id": "773c286c-2184-4e43-8b73-d530c672fba9",
+      "title": "Dangerously in Love",
+      "barcode": "",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "count": 1,
+        "back": false,
+        "artwork": true,
+        "front": true,
+        "darkened": false
+      },
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+      "asin": null,
+      "packaging": "None",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "status": "Official"
+    },
+    {
+      "packaging-id": "36327bc2-f691-3d66-80e5-bd03cec6060a",
+      "asin": "B00007KN0I",
+      "cover-art-archive": {
+        "darkened": false,
+        "artwork": true,
+        "front": true,
+        "count": 1,
+        "back": false
+      },
+      "disambiguation": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "title": "'03 Bonnie & Clyde",
+      "barcode": "044006376721",
+      "release-events": [
+        {
+          "area": {
+            "sort-name": "Germany",
+            "iso-3166-1-codes": ["DE"],
+            "disambiguation": "",
+            "id": "85752fda-13c4-31a3-bee5-0e5cb1f51dad",
+            "type": null,
+            "type-id": null,
+            "name": "Germany"
+          },
+          "date": "2003-01-13"
+        }
+      ],
+      "id": "986e648d-5b5d-4626-8ab3-3fdc21d2766b",
+      "country": "DE",
+      "date": "2003-01-13",
+      "status": "Official",
+      "quality": "normal",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "packaging": "Slim Jewel Case"
+    },
+    {
+      "packaging-id": null,
+      "asin": null,
+      "barcode": null,
+      "title": "'03 Bonnie & Clyde",
+      "cover-art-archive": {
+        "darkened": false,
+        "front": true,
+        "artwork": true,
+        "back": true,
+        "count": 4
+      },
+      "disambiguation": "",
+      "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+      "country": "XE",
+      "id": "ce1110ae-c665-40fb-91a8-c59c36077575",
+      "release-events": [
+        {
+          "area": {
+            "id": "89a675c2-3e37-3518-b83c-418bad59a85a",
+            "type": null,
+            "name": "Europe",
+            "type-id": null,
+            "sort-name": "Europe",
+            "iso-3166-1-codes": ["XE"],
+            "disambiguation": ""
+          },
+          "date": "2002-11-12"
+        }
+      ],
+      "date": "2002-11-12",
+      "status": "Official",
+      "text-representation": {
+        "script": "Latn",
+        "language": "eng"
+      },
+      "quality": "normal",
+      "packaging": null
+    },
+    {
+      "status": "Promotion",
+      "text-representation": {
+        "language": "eng",
+        "script": "Latn"
+      },
+      "quality": "normal",
+      "packaging": null,
+      "asin": "B000068OOE",
+      "packaging-id": null,
+      "title": "Work it Out",
+      "barcode": null,
+      "cover-art-archive": {
+        "front": false,
+        "artwork": false,
+        "back": false,
+        "count": 0,
+        "darkened": false
+      },
+      "disambiguation": "",
+      "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+      "country": "US",
+      "release-events": [
+        {
+          "date": "2002-08-27",
+          "area": {
+            "id": "489ce91b-6658-3307-9877-795b68554c98",
+            "type-id": null,
+            "name": "United States",
+            "type": null,
+            "disambiguation": "",
+            "iso-3166-1-codes": ["US"],
+            "sort-name": "United States"
+          }
+        }
+      ],
+      "id": "de44da39-8f18-4b30-b372-62d78ef40aab",
+      "date": "2002-08-27"
+    }
+  ]
+}
