@@ -1,6 +1,6 @@
 require('dotenv').config();
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { rest } from 'msw';
 import userEvent from '@testing-library/user-event';
 import { setupServer } from 'msw/node';
@@ -35,11 +35,13 @@ describe('AlbumsContainer', () => {
     const nButtonEl = await screen.findByTestId('next-button');
 
     userEvent.click(nButtonEl);
-    expect(pEl).toHaveTextContent(2);
+    userEvent.click(nButtonEl);
 
     userEvent.click(pButtonEl);
-    expect(pEl).toHaveTextContent(1);
 
-    expect(ulEl).toMatchSnapshot();
+    return waitFor(() => {
+      expect(ulEl).not.toBeEmptyDOMElement();
+      expect(pEl).toHaveTextContent(2);
+    });
   });
 });

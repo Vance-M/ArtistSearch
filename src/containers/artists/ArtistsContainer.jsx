@@ -11,9 +11,10 @@ function ArtistsContainer() {
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(1);
 
-  const onSubmitHandler = async (e) => {
+  const onSubmitHandler = (e) => {
     e.preventDefault();
-    await getArtists(query, offset)
+    setLoading(true);
+    getArtists(query, offset)
       .then(setArtists)
       .finally(() => setLoading(false));
   };
@@ -44,9 +45,8 @@ function ArtistsContainer() {
     setPage((prevPage) => prevPage + 1);
   };
 
-  return loading ? (
-    <Spinner />
-  ) : (
+  if (loading) return <Spinner />;
+  return (
     <>
       <ArtistControls
         onSubmit={onSubmitHandler}

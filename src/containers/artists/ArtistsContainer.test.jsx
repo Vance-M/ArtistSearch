@@ -25,13 +25,13 @@ describe('ArtistsContainer', () => {
       </MemoryRouter>
     );
 
-    screen.findByText('Beyoncé');
     const inputEl = await screen.findByTestId('artist-search');
-    const ulEl = await screen.findAllByRole('list', { name: 'artist-list' });
+    const ulEl = await screen.findByRole('list', { name: 'artist-list' });
 
     userEvent.type(inputEl, 'Beyonce');
     return waitFor(() => {
-      expect(ulEl).toHaveLength(1);
+      screen.getByText('Beyoncé', { exact: false });
+      expect(ulEl).not.toBeEmptyDOMElement();
     });
     // const ulEl = screen.getByLabelText('albums');
   });
