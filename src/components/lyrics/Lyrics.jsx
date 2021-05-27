@@ -6,7 +6,7 @@ function Lyrics({ lyrics }) {
    return (
       <>
          {(!lyrics) ? 'sorry no lyrics' :
-      <p>{lyrics.lyrics}</p>
+      <p data-testid='lyrics-p'>{lyrics.lyrics}</p>
          }
    </>)
       

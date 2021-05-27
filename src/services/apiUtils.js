@@ -1,8 +1,10 @@
 /* eslint-disable max-len */
 /* eslint-disable no-undef */
+
+const URL = 'http://musicbrainz.org/ws/2'
 export const getArtists = async (artist, offset) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/artist?query=${artist}&fmt=json&limit=25&offset=${offset}`
+    `${URL}/artist?query=${artist}&fmt=json&limit=25&offset=${offset}`
   );
 
   const { artists, count } = await response.json();
@@ -18,7 +20,7 @@ export const getArtists = async (artist, offset) => {
 
 export const getArtistById = async (id, offset) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/release?artist=${id}&fmt=json&limit=10&offset=${offset}`
+    `${URL}/release?artist=${id}&fmt=json&limit=10&offset=${offset}`
   );
 
   const albums = await response.json();
@@ -35,7 +37,7 @@ export const getArtistById = async (id, offset) => {
 
 export const getAlbumById = async (id) => {
   const response = await fetch(
-    `${process.env.BASE_URL}/recording?release=${id}&fmt=json`
+    `${URL}/recording?release=${id}&fmt=json`
   );
 
   const tracks = await response.json();
