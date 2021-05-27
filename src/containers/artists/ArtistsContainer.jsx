@@ -56,6 +56,7 @@ function ArtistsContainer() {
       <button onClick={handlePrevPage} disabled={page < 2}>
         Prev
       </button>
+      <p>{page}</p>
       <button onClick={handleNextPage} disabled={page > artists.count / 25}>
         Next
       </button>

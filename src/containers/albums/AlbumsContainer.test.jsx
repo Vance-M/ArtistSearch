@@ -1,16 +1,19 @@
+require('dotenv').config();
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { rest } from 'msw';
+import userEvent from '@testing-library/user-event';
 import { setupServer } from 'msw/node';
 import AlbumsContainer from './AlbumsContainer';
-import albumContainer from '../../apiData/albumContainer.json';
 import { MemoryRouter } from 'react-router-dom';
+import albumsContainer from '../../apiData/albumsContainer.json';
 
 const server = setupServer(
   rest.get(
-    'http://musicbrainz.org/ws/2/artist?query=beyonce&fmt=json',
+    // eslint-disable-next-line max-len
+    'http://musicbrainz.org/ws/2/release',
     (req, res, ctx) => {
-      return res(ctx.json(albumContainer));
+      return res(ctx.json(albumsContainer));
     }
   )
 );
@@ -26,6 +29,17 @@ describe('AlbumsContainer', () => {
     );
 
     screen.findByAltText('spinner');
-    // const ulEl = screen.getByLabelText('albums');
+    const ulEl = await screen.findByRole('list', { name: 'release-list' });
+    const pEl = await screen.findByTestId('page');
+    const pButtonEl = await screen.findByTestId('prev-button');
+    const nButtonEl = await screen.findByTestId('next-button');
+
+    userEvent.click(nButtonEl);
+    expect(pEl).toHaveTextContent(2);
+
+    userEvent.click(pButtonEl);
+    expect(pEl).toHaveTextContent(1);
+
+    expect(ulEl).toMatchSnapshot();
   });
 });

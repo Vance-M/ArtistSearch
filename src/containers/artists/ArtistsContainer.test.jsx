@@ -7,18 +7,18 @@ import ArtistsContainer from './ArtistsContainer';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import { MemoryRouter } from 'react-router-dom';
-import albumContainer from '../../apiData/albumContainer.json';
+import artistsContainer from '../../apiData/artistsContainer.json';
 
 const server = setupServer(
   rest.get('http://musicbrainz.org/ws/2/artist', (req, res, ctx) => {
-    return res(ctx.json(albumContainer));
+    return res(ctx.json(artistsContainer));
   })
 );
 
-describe('AlbumsContainer', () => {
+describe('ArtistsContainer', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
-  it('displays a list of albums', async () => {
+  it('displays a list of artists', async () => {
     render(
       <MemoryRouter>
         <ArtistsContainer />

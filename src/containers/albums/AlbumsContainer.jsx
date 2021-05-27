@@ -31,10 +31,19 @@ function AlbumsContainer() {
     <Spinner />
   ) : (
     <>
-      <button onClick={handlePrevPage} disabled={page < 2}>
+      <button
+        data-testid="prev-button"
+        onClick={handlePrevPage}
+        disabled={page < 2}
+      >
         Prev
       </button>
-      <button onClick={handleNextPage} disabled={page > artist.count / 10}>
+      <p data-testid="page">{page}</p>
+      <button
+        data-testid="next-button"
+        onClick={handleNextPage}
+        disabled={page > artist.count / 10}
+      >
         Next
       </button>
       <AlbumList releases={artist.albums} artistName={artistName} />

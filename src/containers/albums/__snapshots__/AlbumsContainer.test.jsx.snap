@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumsContainer displays a list of albums 1`] = `
+<ul
+  aria-label="release-list"
+>
+  <li>
+    <a
+      href="/undefined/release/07823f7b-199e-4194-8685-8f1c7a4dc48f"
+    >
+      <figure>
+        <img
+          alt="Work It Out"
+          src="http://coverartarchive.org/release/07823f7b-199e-4194-8685-8f1c7a4dc48f/front"
+        />
+        <figcaption>
+          <h2>
+            Work It Out
+          </h2>
+          <p>
+            Release date: 
+            2002-07-15
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/0f0cdddb-f1c3-424b-8b3d-cba17b939a6d"
+    >
+      <figure>
+        <img
+          alt="Work It Out"
+          src="http://coverartarchive.org/release/0f0cdddb-f1c3-424b-8b3d-cba17b939a6d/front"
+        />
+        <figcaption>
+          <h2>
+            Work It Out
+          </h2>
+          <p>
+            Release date: 
+            2002
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/157ac01a-9ba2-4fec-9893-c45c36ac140a"
+    >
+      <figure>
+        <img
+          alt="Work It Out"
+          src="http://coverartarchive.org/release/157ac01a-9ba2-4fec-9893-c45c36ac140a/front"
+        />
+        <figcaption>
+          <h2>
+            Work It Out
+          </h2>
+          <p>
+            Release date: 
+            2002
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/3e581f3e-95e4-4099-bc06-1171879b4e5f"
+    >
+      <figure>
+        <img
+          alt="Dangerously in Love"
+          src="http://coverartarchive.org/release/3e581f3e-95e4-4099-bc06-1171879b4e5f/front"
+        />
+        <figcaption>
+          <h2>
+            Dangerously in Love
+          </h2>
+          <p>
+            Release date: 
+            2003-06-23
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/40b8a78b-b248-431d-8938-ac997f98bfb3"
+    >
+      <figure>
+        <img
+          alt="I Can't Take No More"
+          src="http://coverartarchive.org/release/40b8a78b-b248-431d-8938-ac997f98bfb3/front"
+        />
+        <figcaption>
+          <h2>
+            I Can't Take No More
+          </h2>
+          <p>
+            Release date: 
+            2003-06-02
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/76c48ed1-efca-446f-8573-2033fc094319"
+    >
+      <figure>
+        <img
+          alt="Work It Out"
+          src="http://coverartarchive.org/release/76c48ed1-efca-446f-8573-2033fc094319/front"
+        />
+        <figcaption>
+          <h2>
+            Work It Out
+          </h2>
+          <p>
+            Release date: 
+            2002
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/773c286c-2184-4e43-8b73-d530c672fba9"
+    >
+      <figure>
+        <img
+          alt="Dangerously in Love"
+          src="http://coverartarchive.org/release/773c286c-2184-4e43-8b73-d530c672fba9/front"
+        />
+        <figcaption>
+          <h2>
+            Dangerously in Love
+          </h2>
+          <p>
+            Release date: 
+            2003-03-10
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/986e648d-5b5d-4626-8ab3-3fdc21d2766b"
+    >
+      <figure>
+        <img
+          alt="'03 Bonnie & Clyde"
+          src="http://coverartarchive.org/release/986e648d-5b5d-4626-8ab3-3fdc21d2766b/front"
+        />
+        <figcaption>
+          <h2>
+            '03 Bonnie & Clyde
+          </h2>
+          <p>
+            Release date: 
+            2003-01-13
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/ce1110ae-c665-40fb-91a8-c59c36077575"
+    >
+      <figure>
+        <img
+          alt="'03 Bonnie & Clyde"
+          src="http://coverartarchive.org/release/ce1110ae-c665-40fb-91a8-c59c36077575/front"
+        />
+        <figcaption>
+          <h2>
+            '03 Bonnie & Clyde
+          </h2>
+          <p>
+            Release date: 
+            2002-11-12
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+  <li>
+    <a
+      href="/undefined/release/de44da39-8f18-4b30-b372-62d78ef40aab"
+    >
+      <figure>
+        <img
+          alt="Work it Out"
+          src="http://coverartarchive.org/release/de44da39-8f18-4b30-b372-62d78ef40aab/front"
+        />
+        <figcaption>
+          <h2>
+            Work it Out
+          </h2>
+          <p>
+            Release date: 
+            2002-08-27
+             
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </li>
+</ul>
+`;
