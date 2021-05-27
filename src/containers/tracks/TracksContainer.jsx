@@ -7,7 +7,7 @@ import { getAlbumById } from '../../services/apiUtils';
 function TracksContainer() {
   const [tracks, setTracks] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { releaseId } = useParams();
+  const { releaseId, artistName } = useParams();
 
   useEffect(() => {
     getAlbumById(releaseId)
@@ -18,7 +18,10 @@ function TracksContainer() {
   return loading ? (<h1>Loading...</h1>) :
     (
       <>
-        <TracksList tracks={tracks}/>
+        <TracksList
+          tracks={tracks}
+          artistName={artistName}
+        />
     
       </>
     );

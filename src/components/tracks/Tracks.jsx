@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-function Tracks({ title, recordingId, length }) {
+function Tracks({ title, length, artistName }) {
   const convertMilli = ({ length }) => {
     const minutes = Math.floor(length / 60000);
     const seconds = ((length % 60000) / 1000).toFixed(0);
@@ -13,7 +13,7 @@ function Tracks({ title, recordingId, length }) {
 
   return (
     <div>
-      <Link to={`/track/${recordingId}`}>
+      <Link to={`/${artistName}/track/${title}`}>
         <h1>{title}</h1>
         {!length ? 'N/A' : <p>Playtime : {convertMilli({ length })}</p>}
       </Link>
@@ -22,7 +22,7 @@ function Tracks({ title, recordingId, length }) {
 }
 
 Tracks.propTypes = {
-  recordingId: PropTypes.string.isRequired,
+  artistName: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   length: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };

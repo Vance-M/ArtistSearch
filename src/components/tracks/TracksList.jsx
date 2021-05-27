@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Tracks from './Tracks';
 
-function TracksList({ tracks }) {
+function TracksList({ tracks, artistName }) {
   return (
     <ul aria-label="track-list">
       {tracks.map(({
@@ -15,6 +15,7 @@ function TracksList({ tracks }) {
             title={title}
             recordingId={recordingId}
             length={length}
+            artistName={artistName}
           />
         </li>
       ))}
@@ -23,6 +24,7 @@ function TracksList({ tracks }) {
 }
 
 TracksList.propTypes = {
+  artistName: PropTypes.string.isRequired,
   tracks: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

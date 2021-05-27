@@ -48,10 +48,45 @@ export const getAlbumById = async (id) => {
   }));
 };
 
+// export const getLyrics = async (artist, track) => {
+//   try{
+//     const response = await fetch(`https://api.lyrics.ovh/v1/${artist}/${track}`, {
+//       timeout: 1000,
+//     });
+//     const lyrics = await response.json();
+//     return lyrics
+//   } catch {
+//     console.error(err => (err.message))
+//   }
+
+// };
+
+async function fetchWithTimeout(resource, options) {
+  const { timeout = 8000 } = options;
+
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+
+  const response = await fetch(resource, {
+    ...options,
+    signal: controller.signal,
+  });
+  clearTimeout(id);
+
+  return response;
+}
+
 export const getLyrics = async (artist, track) => {
-  const response = await fetch(`https://api.lyrics.ovh/v1/${artist}/${track}`);
+  try {
+    const response = await fetchWithTimeout(
+      `https://api.lyrics.ovh/v1/${artist}/${track}`,
+      {
+        timeout: 4000,
+      }
+    );
 
-  const lyrics = await response.json();
+    const lyrics = await response.json();
 
-  return lyrics;
+    return lyrics;
+  } catch(error) { return {lyrics: 'Sorry, no lyrics found!'};}
 };
