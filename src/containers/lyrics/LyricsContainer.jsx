@@ -19,7 +19,13 @@ function LyricsContainer() {
 
   console.log(lyrics);
 
-  return loading ? <Spinner /> : <Lyrics lyrics={lyrics} />;
+  return loading ? (
+    <Spinner />
+  ) : (
+    <div data-testid="lyrics-p">
+      <Lyrics lyrics={lyrics} />
+    </div>
+  );
 }
 
 export default LyricsContainer;

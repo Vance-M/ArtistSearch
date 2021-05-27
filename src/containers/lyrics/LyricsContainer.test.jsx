@@ -7,10 +7,10 @@ import { setupServer } from 'msw/node';
 import lyricsContainer from '../../apiData/lyricsContainer.json'
 
 const server = setupServer(
-  rest.get('', (req, res, ctx) => {
+  rest.get('https://api.lyrics.ovh/v1/', (req, res, ctx) => {
     return res(ctx.json(lyricsContainer));
   })
-)
+);
 describe('LyricsContainer', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
@@ -22,10 +22,11 @@ describe('LyricsContainer', () => {
       </MemoryRouter>
     );
 
-    screen.findByAltText('spinner');
-    const pEl = await screen.findByTestId('lyrics-p')
+    
     return waitFor(() => {
-      expect(pEl).toMatchSnapshot();
+      screen.findByAltText('spinner');
+      const divEl = screen.findByTestId('lyrics-p')
+      expect(divEl).toMatchSnapshot();
     })
   });
 });
