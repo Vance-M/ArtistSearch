@@ -10,7 +10,7 @@ import tracksContainer from '../../apiData/tracksContainer.json';
 const server = setupServer(
   rest.get(
     // eslint-disable-next-line max-len
-    'http://musicbrainz.org/ws/2/recording',
+    'https://musicbrainz.org/ws/2/recording',
     (req, res, ctx) => {
       return res(ctx.json(tracksContainer));
     }
