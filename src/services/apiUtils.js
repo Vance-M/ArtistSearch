@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 /* eslint-disable no-undef */
 
-const URL = 'http://musicbrainz.org/ws/2'
+const URL = 'https://musicbrainz.org/ws/2'
 export const getArtists = async (artist, offset) => {
   const response = await fetch(
     `${URL}/artist?query=${artist}&fmt=json&limit=25&offset=${offset}`
